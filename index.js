@@ -16,7 +16,7 @@
 function processFirstItem(stringList, callback) {
   return callback(stringList[0])
 }
-console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
+console.log(processFirstItem(['foo', 'bar'], function (str) { return str + str }));
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -28,18 +28,23 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+    counter1 has a private variable.
+    counter2 has a global variable.
+
   2. Which of the two uses a closure? How can you tell?
+    counter1 uses a closure. There is a function inside another function with a return.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+  counter2 be better?  
+     'counter2' Use only if you need to use the global variable in another function. 
+     otherwise use 'counter1'
 */
 
 // counter1 code
 function counterMaker() {
   let count = 0;
   return function counter() {
-   return count++;
+    return count++;
   }
 }
 
@@ -62,9 +67,9 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
-}
+function inning() {
+  return Math.floor(Math.random() * 3);
+} console.log(inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -79,9 +84,9 @@ Use the finalScore function below to do the following:
   "Home": 11,
   "Away": 5
 }
-*/ 
+*/
 
-function finalScore(/*code Here*/){
+function finalScore(/*code Here*/) {
   /*Code Here*/
 }
 
@@ -144,11 +149,11 @@ function scoreboard(/* CODE HERE */) {
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-function foo(){
+function foo() {
   //console.log('its working');
   return 'bar';
 }
-export default{
+export default {
   foo,
   processFirstItem,
   counter1,
