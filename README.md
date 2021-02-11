@@ -95,6 +95,12 @@ addSix(21); // returns 27
 
 2. Research the differences between functional programming and object oriented programming. Then, describe the pros and cons of functional programming vs object-oriented programming. This is a common interview question and great practice!
 
+Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
+
+Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+
+Functional Programing VS Object-oriented Programing: https://www.geeksforgeeks.org/difference-between-functional-programming-and-object-oriented-programming/
+
 ## Resources
 
 📚 [Scope and Closures Guide](https://css-tricks.com/javascript-scope-closures/)

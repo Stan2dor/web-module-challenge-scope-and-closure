@@ -70,7 +70,7 @@ NOTE: This will be a callback function for the tasks below
 function inning() {
   return Math.floor(Math.random() * 3);
 }
-
+console.log(inning());
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
@@ -92,6 +92,7 @@ function finalScore(inning, num) {
     "Away": inning() * num
   }
 }
+console.log(finalScore(inning,9));
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
@@ -104,6 +105,7 @@ function getInningScore(inning) {
     "Away": inning()
   }
 }
+console.log(getInningScore(inning));
 
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
