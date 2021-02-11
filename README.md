@@ -9,7 +9,12 @@ The module challenge is the afternoon project or assignment that students work t
 ## Objectives
 
 - Explain function scope
+  When you declare a variable in a function, you can access this variable only within the function. You can’t get this variable once you get out of it.
+
 - Describe what closure is, how closure is created in a program and why it is important to understand closures in JavaScript  
+  Whenever you create a function within another function, you have created a closure. The inner function is the closure. This closure is usually returned so you can use the outer function’s variables at a later time. Since closures have access to the variables in the outer function, they are usually used for two things:
+    1. To control side effects
+    2. To create private variables
 
 ## Introduction
 
@@ -43,6 +48,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+A closure is a function having access to the parent scope, even after the parent function has closed.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +71,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  The return function have a private variable inside.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The variable 'dansRoll' will generate a random number everytime it runs.
+
+c. What is the lexical scope of `newRoll`? 
+  Local scope - Variables defined inside a function are not accessible (visible) from outside the function.
 
 ### Task 3 - Stretch Goals
 
